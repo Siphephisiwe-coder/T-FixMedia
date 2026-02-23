@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Fix Media | Cellphone & Computer Repairs</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="hamburger" id="p3z91k">
+    <span></span>
+    <span></span>
+    <span></span>
+ </div>
+  <div class="nav-logo">
+    <span class="nav-logo-text">T-FIX <span>MEDIA</span></span>
+  </div>
+  <div class="nav-links">
+    <a onclick="showPage('home')" class="active" id="nav-home">Home</a>
+    <a onclick="showPage('services')" id="nav-services">Services</a>
+    <a onclick="showPage('about')" id="nav-about">About</a>
+    <a onclick="showPage('gallery')" id="nav-gallery">Gallery</a>
+    <a onclick="showPage('faq')" id="nav-faq">FAQ</a>
+    <a onclick="showPage('contact')" id="nav-contact" class="nav-cta">Book Repair</a>
+  </div>
+</nav>
+
+<a class="floating-call" href="tel:0737617834">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  073 761 7834
+</a>
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="dot-live"></div>
+        <span>Johannesburg's Trusted Repair Experts</span>
+      </div>
+      <h1 class="hero-title">Expert Tech<span class="accent">Repairs.</span></h1>
+      <p class="hero-desc">From cracked screens to complex water damage — T-Fix Media delivers fast, professional, and affordable repairs for all your cellphones and computers.</p>
+      <div class="hero-actions">
+        <button class="btn-gold" onclick="showPage('services')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          View Services
+        </button>
+        <button class="btn-ghost" onclick="showPage('contact')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a Repair
+        </button>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="h-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <p>Phones</p>
+      </div>
+      <div class="h-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+        <p>Laptops</p>
+      </div>
+      <div class="h-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="1"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <p>Desktops</p>
+      </div>
+      <div class="h-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <p>Tablets</p>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Devices Repaired</div></div>
+    <div class="stat-item"><div class="stat-num">5★</div><div class="stat-label">Customer Rating</div></div>
+    <div class="stat-item"><div class="stat-num">24hr</div><div class="stat-label">Fast Turnaround</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Quality Guaranteed</div></div>
+  </div>
+
+  <div class="section-wrap">
+    <span class="eyebrow">Why Choose T-Fix</span>
+    <h2 class="section-title">Repairs Done <span class="blue">Right.</span></h2>
+    <p class="section-sub">We combine technical expertise with genuine care — getting your devices back fast, without compromise.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Fast Turnaround</h3>
+        <p>Most repairs completed same-day or within 24 hours. Your time matters — we deliver quickly without cutting corners.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Quality Parts</h3>
+        <p>We source only high-quality OEM or equivalent parts, backed by a warranty so you can trust every repair we do.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Transparent Pricing</h3>
+        <p>Upfront quotes before any work begins. No hidden fees — ever. You decide with full information.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Certified Technicians</h3>
+        <p>Experienced specialists who have repaired hundreds of devices across all major brands and platforms.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="page" id="page-services">
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-inner">
+      <span class="eyebrow">What We Fix</span>
+      <h1>Our <span>Services</span></h1>
+    </div>
+  </div>
+  <div class="section-wrap" style="padding-top:3rem;">
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3>Screen Replacement</h3>
+        <p>Cracked or shattered screen? We replace displays on all major smartphone and tablet brands using quality parts that restore original clarity and touch sensitivity.</p>
+        <div class="tag-row"><span class="tag">Samsung</span><span class="tag">iPhone</span><span class="tag">Huawei</span><span class="tag">Xiaomi</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="12" height="11" rx="2"/><polyline points="9 7 9 4 15 4 15 7"/><line x1="12" y1="11" x2="12" y2="14"/></svg></div>
+        <h3>Battery Replacement</h3>
+        <p>Rapid battery drain or device that won't hold charge? We replace batteries in phones and laptops so you get back to all-day power with genuine cells.</p>
+        <div class="tag-row"><span class="tag">All Phones</span><span class="tag">Laptops</span><span class="tag">Tablets</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Charging Problems</h3>
+        <p>Slow charging, intermittent connection, or won't charge at all? We diagnose and repair charging ports, power ICs, and flex cables on all device types.</p>
+        <div class="tag-row"><span class="tag">Port Repair</span><span class="tag">Board Level</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg></div>
+        <h3>LCD Replacement</h3>
+        <p>Flickering displays, black spots, or dead pixels? We replace LCDs on smartphones, tablets, laptops, and desktop monitors with precision and care.</p>
+        <div class="tag-row"><span class="tag">Monitors</span><span class="tag">Laptops</span><span class="tag">Phones</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Software Upgrades</h3>
+        <p>Sluggish performance, app crashes, or outdated OS? We perform system updates, malware removal, and full optimization to breathe new life into your device.</p>
+        <div class="tag-row"><span class="tag">Android</span><span class="tag">iOS</span><span class="tag">Windows</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="1"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Windows Upgrade</h3>
+        <p>Upgrade your PC or laptop to Windows 10 or 11 for improved security, performance, and access to the full Microsoft ecosystem.</p>
+        <div class="tag-row"><span class="tag">Win 10</span><span class="tag">Win 11</span><span class="tag">Data Migration</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">07</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
+        <h3>Water Damage</h3>
+        <p>Dropped your device in liquid? Don't panic — bring it in immediately. We professionally clean, dry, and restore water-damaged devices using ultrasonic cleaning.</p>
+        <div class="tag-row"><span class="tag">Emergency</span><span class="tag">Ultrasonic</span><span class="tag">Board Repair</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">08</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Computer Repairs</h3>
+        <p>Not booting, running slow, or making strange noises? We handle all computer hardware and software issues — desktops, laptops, and all-in-ones.</p>
+        <div class="tag-row"><span class="tag">PC</span><span class="tag">Laptop</span><span class="tag">Virus Removal</span></div>
+      </div>
+    </div>
+    <div class="promo-strip">
+      <div>
+        <h2>Free Diagnosis on Every Repair</h2>
+        <p>No fix, no fee — we assess your device at no charge and give you a transparent quote before we start.</p>
+      </div>
+      <button class="btn-gold" onclick="showPage('contact')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Book a Repair
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="page" id="page-about">
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-inner">
+      <span class="eyebrow">Our Story</span>
+      <h1>About <span>T-Fix</span></h1>
+    </div>
+  </div>
+  <div class="section-wrap" style="padding-top:3.5rem;">
+    <div class="about-split">
+      <div class="about-visual-block">
+        <div class="big-stat">
+          <div class="big-stat-num">5+</div>
+          <div class="big-stat-label">Years of Experience</div>
+        </div>
+        <div class="mini-stats">
+          <div class="mini-stat"><div class="mini-stat-n">500+</div><div class="mini-stat-l">Happy Clients</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">24h</div><div class="mini-stat-l">Avg. Turnaround</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">8+</div><div class="mini-stat-l">Services Offered</div></div>
+          <div class="mini-stat"><div class="mini-stat-n">100%</div><div class="mini-stat-l">Quality Parts</div></div>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Who We Are</span>
+        <h2 class="section-title">Passionate About<br><span class="blue">Tech Repairs</span></h2>
+        <p style="color:var(--gray-600);line-height:1.8;margin-bottom:0.75rem;">T-Fix Media was founded on a simple belief: everyone deserves reliable, fast, and affordable tech repairs. What started as a cellphone repair shop has grown into a full-service repair centre trusted by hundreds of customers across Johannesburg.</p>
+        <p style="color:var(--gray-600);line-height:1.8;">We treat every device as if it were our own — with precision, care, and pride in our workmanship.</p>
+        <ul class="value-list">
+          <li><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Certified and experienced repair technicians</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Quality parts with warranty on all repairs</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Fully transparent pricing — no hidden costs</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Fast turnaround — most repairs completed same day</li>
+          <li><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Free diagnosis — no charge if we can't fix it</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="page" id="page-gallery">
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-inner">
+      <span class="eyebrow">Our Portfolio</span>
+      <h1>Repair <span>Gallery</span></h1>
+    </div>
+  </div>
+  <div class="section-wrap" style="padding-top:3rem;">
+    <div class="gallery-grid">
+      <div class="g-item">
+        <div class="g-bg" style="background:linear-gradient(135deg,#1255B0,#0A3D82);">
+          <svg class="g-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div class="g-overlay"><h4>Screen Replacement</h4><p>Samsung Galaxy S21 Ultra</p></div>
+        <div class="g-label">Screen Repair</div>
+      </div>
+      <div class="g-item">
+        <div class="g-bg" style="background:linear-gradient(135deg,#c9a200,#F5C400);">
+          <svg class="g-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(10,61,130,0.35)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="12" height="11" rx="2"/><polyline points="9 7 9 4 15 4 15 7"/></svg>
+        </div>
+        <div class="g-overlay"><h4>Battery Replacement</h4><p>iPhone 13 Pro</p></div>
+        <div class="g-label">Battery</div>
+      </div>
+      <div class="g-item">
+        <div class="g-bg" style="background:linear-gradient(135deg,#0D47A1,#1976D2);">
+          <svg class="g-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(245,196,0,0.35)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+        </div>
+        <div class="g-overlay"><h4>LCD Replacement</h4><p>HP Spectre Laptop</p></div>
+        <div class="g-label">LCD Repair</div>
+      </div>
+      <div class="g-item">
+        <div class="g-bg" style="background:linear-gradient(135deg,#1565C0,#0A3D82);">
+          <svg class="g-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(245,196,0,0.3)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+        </div>
+        <div class="g-overlay"><h4>Water Damage Rescue</h4><p>Samsung A52</p></div>
+        <div class="g-label">Water Damage</div>
+      </div>
+      <div class="g-item">
+        <div class="g-bg" style="background:linear-gradient(135deg,#e6b000,#FFD740);">
+          <svg class="g-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(10,61,130,0.3)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="1"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+        </div>
+        <div class="g-overlay"><h4>Desktop Rebuild</h4><p>Gaming PC Build</p></div>
+        <div class="g-label">PC Repair</div>
+      </div>
+      <div class="g-item">
+        <div class="g-bg" style="background:linear-gradient(135deg,#072e61,#1255B0);">
+          <svg class="g-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(245,196,0,0.35)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="g-overlay"><h4>Windows 11 Upgrade</h4><p>Lenovo ThinkPad X1</p></div>
+        <div class="g-label">Software</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-section">
+    <div class="reviews-inner">
+      <span class="eyebrow">What Clients Say</span>
+      <h2 class="section-title">Real <span class="blue">Reviews</span></h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"Fixed my cracked Samsung screen in under 2 hours. Looks and feels brand new. Service was professional and the price was very fair."</p>
+          <div class="reviewer"><div class="reviewer-avatar">T</div><div><div class="reviewer-name">Thabo M.</div><div class="reviewer-loc">Soweto, JHB</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"My laptop drowned in coffee. T-Fix brought it back to life completely. I couldn't believe it was the same machine. Absolutely incredible."</p>
+          <div class="reviewer"><div class="reviewer-avatar">P</div><div><div class="reviewer-name">Priya S.</div><div class="reviewer-loc">Sandton, JHB</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"Upgraded my old PC to Windows 11 and it runs like new. Quick, professional, honest pricing. T-Fix is my go-to for all tech repairs."</p>
+          <div class="reviewer"><div class="reviewer-avatar">J</div><div><div class="reviewer-name">James K.</div><div class="reviewer-loc">Roodepoort, JHB</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="page" id="page-faq">
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-inner">
+      <span class="eyebrow">Got Questions?</span>
+      <h1>Frequently <span>Asked</span></h1>
+    </div>
+  </div>
+  <div class="section-wrap" style="padding-top:3rem;">
+    <span class="eyebrow">Everything You Need to Know</span>
+    <h2 class="section-title">Common <span class="blue">Questions</span></h2>
+    <p class="section-sub">Can't find what you're looking for? Call us directly and we'll answer any question.</p>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">How long will my repair take?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">Most repairs — including screen replacements, battery swaps, and charging port fixes — are completed same-day, often within 1–3 hours. More complex repairs like water damage or board-level work may take 24–48 hours. We'll always give you a realistic time estimate upfront before starting.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Do you offer a warranty on repairs?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">Yes. All our repairs come with a warranty covering both the parts and workmanship. If the same issue recurs within the warranty period, we'll fix it at no extra charge. Warranty duration varies by repair type — ask us for specifics when you drop your device off.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">How much will my repair cost?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">Repair costs vary depending on the device model and the type of repair needed. We provide a free diagnosis and give you a transparent quote before any work begins. There are no hidden fees — the price we quote is the price you pay, guaranteed.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">What if you can't fix my device?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">If we're unable to repair your device, you pay nothing. Our "no fix, no fee" policy means the diagnosis is always free. We'll be honest with you about whether a repair is economically viable versus replacing the device — we'll never waste your money.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Will I lose my data during a repair?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">For most hardware repairs (screen, battery, charging port), your data is completely safe. However, for software repairs, factory resets, or severe water damage, data loss is sometimes unavoidable. We always recommend backing up your device beforehand, and we'll advise you before any risky procedure.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Do you use genuine OEM parts?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">We use OEM (Original Equipment Manufacturer) or high-quality OEM-equivalent parts for all repairs. We never use low-grade substitutes that could affect your device's performance. If there's a choice between part grades, we'll explain the options and let you decide.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Can you fix a device that won't turn on?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">Absolutely. "Dead" devices can have many causes — a depleted battery, faulty charging circuit, software corruption, or board-level damage. Bring it in and we'll diagnose the root cause. Many devices that appear completely dead are fully repairable.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">What brands do you repair?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">We repair all major brands including Samsung, Apple iPhone, Huawei, Xiaomi, Oppo, Vivo, Nokia, HP, Dell, Lenovo, Acer, Asus, and more. If you're unsure about your brand or model, just call us and we'll confirm before you make the trip.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">My phone got wet — what should I do right now?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">Act fast — do NOT try to charge or turn it on, as this can short-circuit the board. Power it off immediately, remove any case, and bring it to us as soon as possible. Do NOT put it in rice — this is a myth and wastes valuable time. The sooner you bring it in, the higher the chance of a successful repair.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Do I need to book an appointment?<div class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></button>
+        <div class="faq-a">Walk-ins are welcome! However, booking ahead via our contact form or by calling us ensures we have the right parts ready and can prioritize your repair. For complex or less common repairs, we recommend calling first to confirm parts availability.</div>
+      </div>
+    </div>
+
+    <div class="faq-cta">
+      <h3>Still Have Questions?</h3>
+      <p>Our team is ready to help — call us or send a booking request and we'll get back to you quickly.</p>
+      <div class="faq-cta-btns">
+        <a href="tel:0737617834" class="btn-gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call 073 761 7834
+        </a>
+        <button class="btn-ghost" onclick="showPage('contact')" style="color:var(--blue-deep);border-color:rgba(7,46,97,0.3);">Send a Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="page-contact">
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-inner">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Book a <span>Repair</span></h1>
+    </div>
+  </div>
+  <div class="section-wrap" style="padding-top:3rem;">
+    <div class="contact-layout">
+      <div class="contact-info-block">
+        <h2>Contact Information</h2>
+        <div class="contact-detail">
+          <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.14 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div><h4>Phone</h4><a href="tel:0737617834">073 761 7834</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div><h4>WhatsApp</h4><a href="https://wa.me/270737617834">073 761 7834</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Location</h4><p>Johannesburg, Gauteng</p></div>
+        </div>
+        <div class="hours-card">
+          <h4>Operating Hours</h4>
+          <div class="hours-row"><span>Monday – Friday</span><span>08:00 – 18:00</span></div>
+          <div class="hours-row"><span>Saturday</span><span>Closed</span></div>
+          <div class="hours-row"><span>Sunday</span><span>By Appointment</span></div>
+          <div class="hours-row"><span>Public Holidays</span><span>By Appointment</span></div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <h3>Repair Booking</h3>
+        <p class="sub">Fill in the form and we'll contact you to confirm your slot.</p>
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="John"></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+        </div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="072 123 4567"></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Device Type</label>
+            <select><option value="">Select device...</option><option>Smartphone</option><option>Tablet</option><option>Laptop</option><option>Desktop PC</option><option>Other</option></select>
+          </div>
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select><option value="">Select service...</option><option>Screen Replacement</option><option>Battery Replacement</option><option>Charging Problems</option><option>LCD Replacement</option><option>Software Upgrade</option><option>Windows Upgrade</option><option>Water Damage</option><option>Computer Repair</option><option>Not Sure / Other</option></select>
+          </div>
+        </div>
+        <div class="form-group"><label>Describe the Problem</label><textarea placeholder="Tell us what's happening with your device..."></textarea></div>
+        <button class="form-submit" onclick="submitForm()">Submit Booking Request</button>
+        <div class="success-msg" id="success-msg">✓ Booking received! We'll call you shortly to confirm your slot.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo-text">T-FIX <span>MEDIA</span></div>
+      <p>Your trusted cellphone & computer repair specialist in Johannesburg. Fast, reliable, affordable.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('services')">Services</a>
+      <a onclick="showPage('about')">About Us</a>
+      <a onclick="showPage('gallery')">Gallery</a>
+      <a onclick="showPage('faq')">FAQ</a>
+      <a onclick="showPage('contact')">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a>Screen Replacement</a>
+      <a>Battery Replacement</a>
+      <a>Water Damage Repair</a>
+      <a>Windows Upgrade</a>
+      <a>Software Upgrades</a>
+      <a>Computer Repairs</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="tel:0737617834">073 761 7834</a>
+      <a>Johannesburg, Gauteng</a>
+      <a>Mon–Fri: 08:00–18:00</a>
+      <a>Sat: Closed</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 T-Fix Media. All rights reserved.</p>
+    <p>Cellphone & Computer Repairs · Johannesburg</p>
+  </div>
+</footer>
+
+<script>
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const page = document.getElementById('page-' + name);
+    const nav = document.getElementById('nav-' + name);
+    if (page) page.classList.add('active');
+    if (nav) nav.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  function submitForm() {
+    const inputs = document.querySelectorAll('#page-contact input, #page-contact select, #page-contact textarea');
+    let valid = true;
+    inputs.forEach(i => { if (!i.value) valid = false; });
+    if (!valid) { alert('Please fill in all fields before submitting.'); return; }
+    document.getElementById('success-msg').style.display = 'block';
+    inputs.forEach(i => i.value = '');
+    setTimeout(() => { document.getElementById('success-msg').style.display = 'none'; }, 6000);
+  }
+</script>
+<script id="n8x11l">
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+</script>
+</body>
+</html>
