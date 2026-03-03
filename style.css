@@ -21,7 +21,7 @@
   ::-webkit-scrollbar-track { background: var(--blue-deep); }
   ::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 3px; }
 
-  /* NAV */
+  /*================================================================== NAV ===================================================*/
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
     height: 70px; display: flex; align-items: center; justify-content: space-between;
@@ -58,7 +58,7 @@
   .nav-cta::after { display: none !important; }
   .nav-cta:hover { background: var(--yellow-light) !important; transform: translateY(-1px); }
 
-  /* hamburger */
+  /*========================================= hamburger =========================================*/
 .hamburger {
   display: none;
   flex-direction: column;
@@ -73,7 +73,7 @@
   transition: 0.3s;
 }
 
-/* mobile */
+/*======================================= mobile ==================================================*/
 @media (max-width: 900px) {
   .nav-links {
     position: absolute;
@@ -202,7 +202,7 @@
   .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; color: var(--blue-deep); line-height: 1; }
   .stat-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue-dark); margin-top: 0.2rem; }
 
-  /* SECTION BASE */
+  /*==================================== SECTION BASE ============================================*/
   .section-wrap { max-width: 1140px; margin: 0 auto; padding: 6rem 2rem; }
   .eyebrow {
     display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 3px;
@@ -216,7 +216,7 @@
   .section-title .blue { color: var(--blue); }
   .section-sub { font-size: 1rem; color: var(--gray-600); line-height: 1.7; max-width: 520px; }
 
-  /* WHY GRID */
+  /*================================================== WHY GRID =============================================*/
   .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; margin-top: 3.5rem; }
   .why-card {
     background: var(--white); border: 1px solid #E2EBF8; border-radius: 18px;
@@ -237,7 +237,7 @@
   .why-card h3 { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.5rem; }
   .why-card p { font-size: 0.86rem; color: var(--gray-600); line-height: 1.7; }
 
-  /* PAGE HEADER */
+  /*============================================ PAGE HEADER =========================================================*/
   .page-header {
     background: var(--blue-deep); padding: 5rem 3rem 4rem;
     position: relative; overflow: hidden;
@@ -259,34 +259,122 @@
     background-size: 20px 20px;
   }
 
-  /* SERVICES */
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 1.75rem; }
-  .service-card {
-    background: var(--white); border-radius: 20px; padding: 2.5rem;
-    border: 1px solid #E2EBF8; transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
-    position: relative; overflow: hidden;
+ /* SERVICES — TABBED */
+  .svc-tabs-nav {
+    display: flex; gap: 0; background: var(--off-white);
+    border-radius: 16px; padding: 6px; margin-bottom: 3rem;
+    border: 1px solid #E2EBF8;
   }
-  .service-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 20px 60px rgba(10,61,130,0.18); border-color: transparent; }
-  .service-num {
-    font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--gray-100);
-    line-height: 1; position: absolute; top: 1.5rem; right: 1.75rem;
-    letter-spacing: 1px; transition: color 0.3s;
+  .svc-tab-btn {
+    flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+    padding: 1rem 1.2rem; border: none; background: none; cursor: pointer;
+    border-radius: 12px; font-family: 'Outfit', sans-serif; font-weight: 600;
+    font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; color: var(--gray-600);
+    transition: all 0.28s cubic-bezier(0.34,1.56,0.64,1);
   }
-  .service-card:hover .service-num { color: rgba(245,196,0,0.2); }
-  .svc-icon {
-    width: 54px; height: 54px;
-    background: linear-gradient(135deg, var(--blue-deep), var(--blue));
-    border-radius: 16px; display: flex; align-items: center; justify-content: center;
-    margin-bottom: 1.5rem; box-shadow: 0 6px 20px rgba(10,61,130,0.25);
+  .svc-tab-btn svg { width: 18px; height: 18px; flex-shrink: 0; transition: color 0.25s; }
+  .svc-tab-btn:hover { color: var(--blue); }
+  .svc-tab-btn.active {
+    background: var(--blue-deep); color: var(--white);
+    box-shadow: 0 4px 20px rgba(7,46,97,0.3);
   }
-  .svc-icon svg { width: 24px; height: 24px; color: var(--white); }
-  .service-card h3 { font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 0.6rem; }
-  .service-card p { font-size: 0.86rem; color: var(--gray-600); line-height: 1.75; margin-bottom: 1.25rem; }
-  .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .tag {
-    font-size: 0.68rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
-    background: var(--gray-100); color: var(--blue); padding: 0.25rem 0.7rem; border-radius: 100px;
+  .svc-tab-btn.active svg { color: var(--yellow); }
+  .svc-tab-btn .tab-badge {
+    font-size: 0.6rem; font-weight: 700; background: var(--yellow); color: var(--blue-deep);
+    padding: 0.15rem 0.45rem; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase;
   }
+  .svc-tab-btn.active .tab-badge { background: rgba(245,196,0,0.2); color: var(--yellow); }
+
+  .svc-panel { display: none; animation: fadeUp 0.4s ease both; }
+  .svc-panel.active { display: block; }
+
+  /* Major service hero block */
+  .svc-hero-block {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem;
+  }
+  .svc-hero-left 
+  .svc-major-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(245,196,0,0.12); border: 1px solid rgba(245,196,0,0.3);
+    color: var(--yellow); font-size: 0.68rem; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: 100px; margin-bottom: 1.25rem;
+  }
+  .svc-major-title {
+    font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--text); letter-spacing: 1px; line-height: 1; margin-bottom: 1rem;
+  }
+  .svc-major-title span { color: var(--blue); }
+  .svc-major-desc { font-size: 0.95rem; color: var(--gray-600); line-height: 1.8; margin-bottom: 2rem; }
+  .svc-includes { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2rem; }
+  .svc-includes li {
+    display: flex; align-items: center; gap: 0.75rem;
+    font-size: 0.88rem; color: var(--text); font-weight: 500;
+  }
+  .svc-includes li::before {
+    content: ''; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--yellow); flex-shrink: 0;
+  }
+
+  /* Pricing cards */
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+  .price-card {
+    background: var(--white); border: 1.5px solid #E2EBF8; border-radius: 16px; padding: 1.6rem 1.5rem;
+    transition: all 0.28s; position: relative; overflow: hidden;
+  }
+  .price-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--yellow), var(--blue));
+  }
+  .price-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(10,61,130,0.14); border-color: transparent; }
+  .price-card.featured { background: var(--blue-deep); border-color: var(--blue-deep); }
+  .price-card.featured .price-label, .price-card.featured .price-desc { color: rgba(255,255,255,0.7); }
+  .price-card.featured .price-amount { color: var(--yellow); }
+  .price-card.featured .price-name { color: var(--white); }
+  .price-card.featured::before { background: var(--yellow); height: 3px; }
+  .featured-badge {
+    position: absolute; top: 1rem; right: 1rem;
+    font-size: 0.58rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    background: var(--yellow); color: var(--blue-deep); padding: 0.2rem 0.5rem; border-radius: 4px;
+  }
+  .price-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--gray-100); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+  .price-card.featured .price-icon { background: rgba(255,255,255,0.1); }
+  .price-icon svg { width: 18px; height: 18px; color: var(--blue); }
+  .price-card.featured .price-icon svg { color: var(--yellow); }
+  .price-name { font-weight: 700; font-size: 0.92rem; color: var(--text); margin-bottom: 0.3rem; }
+  .price-amount {
+    font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--blue);
+    letter-spacing: 1px; line-height: 1;
+  }
+  .price-label { font-size: 0.7rem; font-weight: 600; color: var(--gray-400); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.5rem; }
+  .price-desc { font-size: 0.78rem; color: var(--gray-600); line-height: 1.5; margin-top: 0.5rem; }
+  .price-quote {
+    font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--blue);
+    letter-spacing: 1px; line-height: 1;
+  }
+  .price-card.featured .price-quote { color: var(--yellow); }
+
+  /* Minor repairs section */
+  .minor-divider {
+    display: flex; align-items: center; gap: 1.5rem; margin: 3.5rem 0 2rem;
+  }
+  .minor-divider::before, .minor-divider::after { content: ''; flex: 1; height: 1px; background: #E2EBF8; }
+  .minor-divider span {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gray-400); white-space: nowrap;
+  }
+  .minor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+  .minor-card {
+    background: var(--off-white); border-radius: 14px; padding: 1.5rem;
+    border: 1px solid #E2EBF8; display: flex; align-items: flex-start; gap: 1rem;
+    transition: all 0.25s;
+  }
+  .minor-card:hover { background: var(--white); box-shadow: 0 8px 24px rgba(10,61,130,0.1); border-color: #c8d8f0; }
+  .minor-icon { width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, var(--blue-deep), var(--blue)); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .minor-icon svg { width: 17px; height: 17px; color: white; }
+  .minor-card h4 { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+  .minor-card p { font-size: 0.75rem; color: var(--gray-600); line-height: 1.5; }
+  .minor-price { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--blue); margin-top: 0.3rem; }
+
   .promo-strip {
     background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
     border-radius: 20px; padding: 3rem;
@@ -299,7 +387,16 @@
   }
   .promo-strip h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--white); letter-spacing: 1px; }
   .promo-strip p { color: rgba(255,255,255,0.7); margin-top: 0.3rem; font-size: 0.92rem; }
-
+  .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    background: var(--gray-100); color: var(--blue); padding: 0.25rem 0.7rem; border-radius: 100px;
+  }
+  @media (max-width: 860px) {
+    .svc-hero-block { grid-template-columns: 1fr; }
+    .svc-tabs-nav { flex-direction: column; }
+  }
+  
   /* ABOUT */
   .about-split { display: grid; grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: center; }
   .about-visual-block {
@@ -363,7 +460,7 @@
   .g-item:hover .g-label { opacity: 0; }
   .g-svg { width: 52px; height: 52px; color: rgba(255,255,255,0.22); }
 
-  /* REVIEWS */
+  /*========================================================== REVIEWS =======================================================*/
   .reviews-section { background: var(--off-white); padding: 5rem 2rem; }
   .reviews-inner { max-width: 1140px; margin: 0 auto; }
   .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
@@ -385,7 +482,7 @@
   .reviewer-name { font-weight: 700; font-size: 0.85rem; color: var(--text); }
   .reviewer-loc { font-size: 0.73rem; color: var(--gray-400); }
 
-  /* FAQ */
+  /*======================================================= FAQ ================================================================*/
   .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3.5rem; }
   .faq-item {
     background: var(--white); border: 1px solid #E2EBF8; border-radius: 16px;
@@ -420,7 +517,7 @@
   .faq-cta p { color: var(--blue-dark); margin: 0.5rem 0 1.75rem; font-size: 0.92rem; }
   .faq-cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-  /* CONTACT */
+  /*========================================================= CONTACT ============================================================*/
   .contact-layout { display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; align-items: start; }
   .contact-info-block h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: var(--text); letter-spacing: 1px; margin-bottom: 2rem; }
   .contact-detail { display: flex; gap: 1.1rem; align-items: flex-start; margin-bottom: 1.75rem; }
@@ -469,7 +566,7 @@
   .form-submit:hover { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(18,85,176,0.4); }
   .success-msg { display: none; background: #E8F5E9; color: #1B5E20; padding: 1rem; border-radius: 10px; text-align: center; font-weight: 600; margin-top: 1rem; font-size: 0.88rem; }
 
-  /* FOOTER */
+  /*========================================== FOOTER ================================================*/
   footer { background: var(--blue-deep); padding: 4rem 3rem 2rem; }
   .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; max-width: 1140px; margin: 0 auto 3rem; }
   .footer-brand .logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 1.75rem; letter-spacing: 3px; color: var(--white); }
@@ -481,7 +578,7 @@
   .footer-bottom { max-width: 1140px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
   .footer-bottom p { font-size: 0.76rem; color: rgba(255,255,255,0.35); }
 
-  /* FLOATING CALL */
+  /*========================================= FLOATING CALL ============================================*/
   .floating-call {
     position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
     display: flex; align-items: center; gap: 0.55rem;
